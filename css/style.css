@@ -3115,7 +3115,7 @@ a.box_contents:hover img {
 
 .map_contact iframe {
   width: 100%;
-  filter: grayscale(85%);
+  filter: none !important;
   height: 450px;
   margin-bottom: -10px;
 }
@@ -3823,7 +3823,7 @@ a.box_contents:hover img {
 }
 
 .pinned-image__container-overlay {
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   bottom: 0;
   left: 0;
   position: absolute;

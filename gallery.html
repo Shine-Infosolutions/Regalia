@@ -6,12 +6,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Ansonika">
-    <title>Regalia Banquet & Resort</title>
+    <meta name="description" content="Regalia Banquet & Resort in Gorakhpur offers luxury rooms, elegant banquets, a fine restaurant, and a serene swimming pool. Experience refined hospitality and unforgettable celebrations.">
+    <meta name="keywords" content="Regalia Banquet & Resort, Regalia, Luxury Resort in Gorakhpur, Best Hotel in Gorakhpur, Top Banquet Hall Gorakhpur, Premium Rooms Gorakhpur, Wedding Venue Gorakhpur, Fine Dining Restaurant Gorakhpur, 5 Star Resort Gorakhpur, Poolside Party Venue Gorakhpur, Elegant Event Space Gorakhpur, High-End Hospitality Gorakhpur">
+    <meta name="author" content="Regalia">
+    <meta name="robots" content="index, follow">
+    <title>Regalia Banquet & Resort || Gallery</title>
+
     
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Regalia Logo.png" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -25,12 +28,17 @@
     <!-- BASE CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="css/vendors.min.css" rel="stylesheet">
+  <link href="css/vendors.min.css" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
+          .regalia-highlight {
+  color: #ebd7b2;
+  font-weight: bold;
+}
         .btn-floating:hover img {
             margin-bottom: -3px
         }
@@ -98,68 +106,156 @@
 
 <body> 
 
-    <a href="tel:9554906092">
+    <!-- Mobile Slide-in Menu -->
+<div id="mobileMenu" style="display:none; position:fixed; top:0; right:0; width:85vw; max-width:400px; height:100vh; background:#fff; box-shadow:-2px 0 10px rgba(0,0,0,0.08); z-index:99999; flex-direction:column;">
+  <div style="position:relative; padding:18px 24px 10px 24px; border-bottom:1px solid #eee; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <img src="img/Regalia Logo.png" alt="Regalia Logo" style="height:148px; width:auto; object-fit:contain; margin-bottom:8px; display:block;">
+    <span style="position:absolute; top:18px; right:24px; font-size:28px; color:#bbb; cursor:pointer;" onclick="closeMobileMenu()">&times;</span>
+  </div>
+  <ul style="list-style:none; padding:0 24px; margin:32px 0 0 0; flex:1;">
+    <li style="margin-bottom:22px;"><a href="index.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">HOME</a></li>
+    <li style="margin-bottom:22px;"><a href="about.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">ABOUT</a></li>
+    <li style="margin-bottom:22px; position:relative;">
+      <a href="room-list-2.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">ROOMS</a>
+      <button style="background:none; border:none; font-size:15px; color:#222; cursor:pointer; margin-left:8px;" onclick="toggleMobileSubmenu(event)">&#9660;</button>
+      <ul class="submenu-list" style="list-style:none; padding-left:16px; margin-top:8px; display:none;">
+        <li style="margin-bottom:10px;"><a href="DeluxRoom.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">DELUXE ROOM</a></li>
+        <li><a href="StandardRoom.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">STANDARD ROOM</a></li>
+      </ul>
+    </li>
+    <li style="margin-bottom:22px;"><a href="restaurant.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">RESTAURANT</a></li>
+    <li style="margin-bottom:22px;"><a href="gallery.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">GALLERY</a></li>
+    <li style="margin-bottom:22px;"><a href="contacts.html" style="color:#222; text-decoration:none; font-family:'Montserrat',sans-serif; font-size:15px;">CONTACTS</a></li>
+  </ul>
+  <a href="tel:8112889999">
+    <button class="btn-floating phone" style="position:absolute; right:25px; bottom:110px; z-index:2100;">
+      <i class="fa-solid fa-phone"></i>
+    </button>
+  </a>
+  <a href="https://api.whatsapp.com/send?phone=8112889999&text=Hello%20Sir%2C%20I%20have%20a%20question%20about..." target="_blank">
+    <button class="btn-floating whatsapp" style="position:absolute; right:25px; bottom:50px; z-index:2100;">
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
+  </a>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function openMobileMenu() {
+    var menu = document.getElementById('mobileMenu');
+    if(menu) {
+      menu.style.display = 'flex';
+      setTimeout(function(){ menu.style.transform = 'translateX(0)'; }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  function closeMobileMenu() {
+    var menu = document.getElementById('mobileMenu');
+    if(menu) {
+      menu.style.transform = 'translateX(100%)';
+      setTimeout(function(){ menu.style.display = 'none'; document.body.style.overflow = ''; }, 300);
+    }
+  }
+  function toggleMobileSubmenu(e) {
+    var btn = e.target;
+    var submenu = btn.parentElement.querySelector('.submenu-list');
+    if(submenu) {
+      if(submenu.style.display==='block') submenu.style.display='none';
+      else submenu.style.display='block';
+    }
+  }
+  var hamburger = document.querySelector('.hamburger_2');
+  if(hamburger) hamburger.onclick = openMobileMenu;
+  window.openMobileMenu = openMobileMenu;
+  window.closeMobileMenu = closeMobileMenu;
+  window.toggleMobileSubmenu = toggleMobileSubmenu;
+});
+</script>
+
+    <a href="tel:8112889999">
         <button class="btn-floating phone">
-            <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
-            <span>9554906092</span>
+            <i class="fa-solid fa-phone"></i>
+
+            <span>8112889999</span>
         </button>
     </a>
 
-    <a href="https://api.whatsapp.com/send?phone=9554906092&text=Hello%20Sir%2C%20I%20have%20a%20question%20about..."
+    <a href="https://api.whatsapp.com/send?phone=8112889999&text=Hello%20Sir%2C%20I%20have%20a%20question%20about..."
         target="_blank">
         <button class="btn-floating whatsapp">
-            <img src="https://i.imgur.com/LBW2Lso.png" alt="WhatsApp">
-            <span>9554906092</span>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>8112889999</span>
         </button>
     </a>
 
-    <div id="preloader">
-        <div data-loader="circle-side"></div>
+    <!-- <div id="preloader">
+        <div data-loader="circle-side"></div> -->
     </div><!-- /Page Preload -->
 
     <header class="fixed_header menu_v4 submenu_version">
-        <div class="layer"></div><!-- Opacity Mask -->
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-4">
-                    <a href="index.html" class="logo_normal">
-                        <!-- <img src="img/logo.png" width="135" height="45" alt=""> -->
-                        <h3 style="color: white;">Regalia Banquet & Resort</h3>
-                    </a>
-                    <a href="index.html" class="logo_sticky">
-                        <!-- <img src="img/logo_sticky.png" width="135" height="45" alt=""> -->
-                        <h3>Regalia Banquet & Resort</h3>
-                    </a>
-                </div>
-                <div class="col-8">
-                    <div class="main-menu">
-                        <a href="#0" class="closebt open_close_menu"><i class="bi bi-x"></i></a>
-                        <div class="logo_panel">
-                            <!-- <img src="img/logo_sticky.png" width="135" height="45" alt="">
+      <!-- <div class="layer"></div> -->
+      <!-- Opacity Mask -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-1">
+            <a href="index.html" class="logo_normal">
+              <img
+                src="img/Regalia Logo.png"
+                width="170"
+                height="160"
+                alt="Regalia Banquet & Resort Logo"
+              />
+            </a>
+            <a href="index.html" class="logo_sticky">
+              <img
+                src="img/Regalia Logo.png"
+                width="170"
+                height="160"
+                alt="Regalia Banquet & Resort Logo"
+              />
+            </a>
+          </div>
+          <div class="col-6">
+            <div class="main-menu" style="margin-right: -435px;">
+              <a href="#0" class="closebt open_close_menu"
+                ><i class="bi bi-x"></i
+              ></a>
+              <div class="logo_panel">
+                <!-- <img src="img/logo_sticky.png" width="135" height="45" alt="">
                               -->
-                            <h3>Regalia Banquet & Resort</h3>
-                        </div>
-                        <nav id="mainNav">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="room-list-2.html">Rooms & Suites</a></li>
-                                <li><a href="restaurant.html">Restaurant</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <!-- <li><a href="#booking_section" class="btn_1">Book Now</a></li> -->
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="hamburger_2 open_close_menu float-end">
-                        <div class="hamburger__box">
-                            <div class="hamburger__inner"></div>
-                        </div>
-                    </div>
-                </div>
+                <h3>Regalia Banquet & Resort</h3>
+              </div>
+              <nav id="mainNav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="submenu">
+                    <a href="room-list-2.html" class="show-submenu">Rooms</a>
+                    <ul>
+                      <li><a href="DeluxRoom.html">DELUXE ROOM</a></li>
+                      <li><a href="StandardRoom.html">STANDARD ROOM</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="restaurant.html">Restaurant</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <!-- <li><a href="#booking_section" class="btn_1">Book Now</a></li> -->
+                </ul>
+              </nav>
             </div>
-        </div><!-- container -->
-    </header><!-- End Header -->
+            <div
+              class="hamburger_2 open_close_menu float-end"
+              style="z-index: 999; position: absolute; right: 30px; top: 82px"
+            >
+              <div class="hamburger__box">
+                <div class="hamburger__inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </header>
+    <!-- End Header -->
 
  
     <main>
@@ -272,42 +368,72 @@
     </main>
 
 
-    <footer class="revealed">
-        <div class="footer_bg">
-            <div class="gradient_over"></div>
-            <div class="background-image" data-background="url(img/rooms/3.jpg)"></div>
-        </div>
-        <div class="container">
-            <div class="row move_content">
-                <div class="col-lg-4 col-md-12">
-                    <h5>Contacts</h5>
-                    <ul>
-                        <li>Gorakhnath Rd, near Value Plus Showroom, Rajendra Nagar, Gorakhpur, Uttar Pradesh
-                            273015<br><br></li>
-                        <li><strong><a href="#0">info@regalia.com</a></strong></li>
-                        <li><strong><a href="#0">+91-9554906092</a></strong></li>
-                    </ul>
-                    <div class="social">
-                        <ul>
-                            <li><a href="#0"><i class="bi bi-instagram"></i></a></li>
-                            <li><a href="#0"><i class="bi bi-whatsapp"></i></a></li>
-                            <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
-                            <li><a href="#0"><i class="bi bi-twitter-x"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 ms-lg-auto">
-                    <h5>Explore</h5>
-                    <div class="footer_links">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Rooms &amp; Suites</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+     <footer class="revealed">
+      <div class="footer_bg">
+        <div class="gradient_over"></div>
+        <div
+          class="background-image"
+          data-background="url(img/rooms/Room1.JPG)"
+        ></div>
+      </div>
+      <div class="container">
+        <div class="row move_content">
+          <div class="col-lg-4 col-md-12">
+            <h5>Contacts</h5>
+            <ul>
+              <li>
+                Gorakhnath Rd, near Value Plus Showroom, Rajendra Nagar,
+                Gorakhpur, Uttar Pradesh 273015<br /><br />
+              </li>
+              <li>
+                <strong><a href="#0">info@regalia.com</a></strong>
+              </li>
+              <li>
+                <strong
+                  ><a href="tel:+91-8112879999"
+                    >+91-8112879999 Restaurant</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <strong
+                  ><a href="tel:+91-8112889999"
+                    >+91-8112889999 Banquet</a
+                  ></strong
+                >
+              </li>
+            </ul>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#0"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="bi bi-whatsapp"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="bi bi-twitter-x"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 ms-lg-auto">
+            <h5>Explore</h5>
+            <div class="footer_links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="room-list-2.html">Rooms</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
                     <div id="newsletter">
                         <h5>Newsletter</h5>
                         <div id="message-newsletter"></div>
@@ -320,16 +446,27 @@
                         </form>
                         <p>Receive latest offers and promos without spam. You can cancel anytime.</p>
                     </div>
-                </div>
-            </div>
-            <!--/row-->
+                </div> -->
         </div>
-        <!--/container-->
-        <div class="copy">
-            <div class="container">
-                © Regalia - by <a href="https://www.shineinfosolutions.in/">Shine Infosolutions</a>
+        <!--/row-->
+      </div>
+      <!--/container-->
+      <div class="copy">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-start">
+              Regalia Banquet & Resort
+              <span class="regalia-highlight"> © All rights reserved</span>
             </div>
+            <div class="col-md-6 text-end">
+              Developed by
+              <a href="https://www.shineinfosolutions.in/"
+                >Shine Infosolutions</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
    
 
